@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 2s ease-in-out;
+  
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  height: 80%;
+  z-index: 30;
+}
+
+.modal-previous-button {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+}
+
+.modal.open {
+  transform: translateX(0);
+}
+
+.modal.closed {
+  transform: translateX(-100%);
+}
